@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golnaz Car Rental"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rgRentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbSedan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sedan" />
+
+        <RadioButton
+            android:id="@+id/rbSUV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUV" />
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/etRentHours"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:hint="Number of Hours"
+        android:inputType="number"/>
+
+    <Switch
+        android:id="@+id/swInsurance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Purchase car insurance" />
+
+    <TextView
+        android:id="@+id/tvErrorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#E91E63"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnStartOver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Over" />
+
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserve" />
+
+</LinearLayout>
